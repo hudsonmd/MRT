@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MovieMinder</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="movie_tab_title">Movies</string>
+    <string name="theater_tab_title">Theaters</string>
+    <string name="saved_theater_tab_title">Saved</string>
+    <string name="search_hint">Search..</string>
+    <string name="theater_search_hint">Enter Zip Code</string>
+	<string name="button_search">Search</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="preference_file_key">com.mrt.pref.key</string>
+</resources>
