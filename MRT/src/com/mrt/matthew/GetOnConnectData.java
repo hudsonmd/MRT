@@ -54,7 +54,7 @@ public class GetOnConnectData extends AsyncTask<String, Void, Void>
          String inputLine;
          Log.i("ConnectTask", "preWrite");
          FileOutputStream writer =
-               mContext.openFileOutput(aSearchParameters + ".txt",
+               mContext.getApplicationContext().openFileOutput(aSearchParameters + ".txt",
                      Context.MODE_PRIVATE);
          BufferedWriter fileWriter =
                new BufferedWriter(new OutputStreamWriter(writer));

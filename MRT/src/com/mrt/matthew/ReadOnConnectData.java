@@ -29,7 +29,7 @@ public class ReadOnConnectData extends
    private List<LocalMovie> mLMovList;
    public ReadOnConnectData(Context aContext)
    {
-      mContext = aContext;
+      mContext = aContext.getApplicationContext();
       mTheaterMap = new HashMap<String, Theater>();
       mLMovList = new ArrayList<LocalMovie>();
    }
