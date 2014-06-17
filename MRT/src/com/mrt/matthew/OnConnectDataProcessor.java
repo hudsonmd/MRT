@@ -126,5 +126,16 @@ public class OnConnectDataProcessor implements DataProcessorInterface
 		}
 		return mov;
 	}
+	
+	public List<LocalMovie> findLocalMoviesByName(String aMovieName, final int aZip) throws Exception{
+		List<LocalMovie> matches = new ArrayList<LocalMovie>();
+		final List<LocalMovie> lMList = mDao.getMoviesPlayingInLocalTheaters(mReferenceTime, 3, aZip, 10);
+		for(final LocalMovie lM : lMList){
+			if(lM.getMovie().getMovieName().contains(aMovieName)){
+				matches.add(lM);
+			}
+		}
+		return matches;
+	}
 
 }
